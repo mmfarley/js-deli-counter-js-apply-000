@@ -1,7 +1,11 @@
 //takes two parameters and appends one while giving message
+var deliLength = 0
 function takeANumber(otherDeli, katzDeli){
-  otherDeli.push(katzDeli)
-  return `Welcome, ${katzDeli}. You are number ${otherDeli.length} in line.`
+  
+ // deliLength = otherDeli.length + 1
+ deliLength++
+  otherDeli.push(deliLength)
+  return `Welcome, ${katzDeli}. You are number ${deliLength} in line.`
 }
 //gives the name of the first person and removes them
 function nowServing(deliLine){
